@@ -1,0 +1,51 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vignesh.adkoin4.Myaccount">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border3">
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance :"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/dbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balance"
+            android:layout_alignBottom="@+id/balance"
+            android:layout_toEndOf="@+id/balance"
+            android:text="₹"
+            android:textSize="25dp"
+            android:layout_marginLeft="25dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reward History"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
