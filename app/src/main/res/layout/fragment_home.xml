@@ -5,9 +5,24 @@
     tools:context="com.example.vignesh.adkoin4.Home">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+
+        android:id="@+id/imglayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="154dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border3">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
 
 </FrameLayout>
