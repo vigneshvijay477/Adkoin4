@@ -3,21 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.vignesh.adkoin4.Myaccount">
 
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
         android:id="@+id/r1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@drawable/border3">
 
         <TextView
             android:id="@+id/balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balance :"
+            android:text="₹ "
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="30dp"
             android:layout_marginLeft="30dp"/>
@@ -29,22 +36,103 @@
             android:layout_alignBaseline="@+id/balance"
             android:layout_alignBottom="@+id/balance"
             android:layout_toEndOf="@+id/balance"
-            android:text="₹"
+            android:text="20.00"
             android:textSize="25dp"
             android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="54dp"
+            android:layout_marginTop="10dp"
+            android:text="Checkout" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/r2"
+        android:layout_below="@+id/r1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@drawable/border3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:src="@drawable/history"
+            android:id="@+id/imageView" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reward History"/>
+            android:layout_centerVertical="true"
+            android:layout_marginStart="27dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Reward History"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_below="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/border3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp"
+                android:text="Share This app with your friends"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_below="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/border3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:src="@drawable/logout"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Logout"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     </RelativeLayout>
 
